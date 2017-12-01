@@ -1,0 +1,289 @@
+Process Number  Arrival Time  Burst  Priorities
+1               1             4      4
+2               2             3      1
+3               3             2      2
+4               4             2      4
+5               6             4      3
+6               7             2      1
+
+
+PID: 5751
+Process Number: 1
+Duration: 1
+Time: 23:50:19
+
+PID: 5752
+Process Number: 2
+Duration: 3
+Time: 23:50:22
+
+PID: 5753
+Process Number: 3
+Duration: 2
+Time: 23:50:24
+
+PID: 5757
+Process Number: 6
+Duration: 2
+Time: 23:50:26
+
+PID: 5753
+Process Number: 3
+Duration: 0
+Time: 23:50:26
+
+PID: 5756
+Process Number: 5
+Duration: 4
+Time: 23:50:30
+
+PID: 5751
+Process Number: 1
+Duration: 3
+Time: 23:50:33
+
+PID: 5755
+Process Number: 4
+Duration: 2
+Time: 23:50:35
+
+dush5441@syslab07:~/Documents/CS451/A2$ ./a.out
+Input file name: input.txt
+
+key:0 process_number:1 arrival_time:1 burst:4 priorities:4 pid:0 is_running:0
+key:1 process_number:2 arrival_time:2 burst:3 priorities:1 pid:0 is_running:0
+key:2 process_number:3 arrival_time:3 burst:2 priorities:2 pid:0 is_running:0
+key:3 process_number:4 arrival_time:4 burst:2 priorities:4 pid:0 is_running:0
+key:4 process_number:5 arrival_time:6 burst:4 priorities:3 pid:0 is_running:0
+key:5 process_number:6 arrival_time:7 burst:2 priorities:1 pid:0 is_running:0
+
+Printout 5751 is about to be suspended... The current time is 23:50:19 hours.
+ A CPU time of 3000  milliseconds was used in the previous burst.
+In that time it was determined that 99999999 was a prime number.
+
+Printout from process whose pid is 5752. PID 5752 has completed its task.
+ The current time is 23:50:22 hours. The CPU time of 3000 milliseconds (=3 seconds) was used by PID 5752. In that time it was determined that 100000037 was a prime number.
+PID 5753 resumed
+
+Printout 5753 is about to be suspended... The current time is 23:50:24 hours.
+ A CPU time of 0  milliseconds was used in the previous burst.
+In that time it was determined that 100000007 was a prime number.
+
+Printout from process whose pid is 5757. PID 5757 has completed its task.
+ The current time is 23:50:26 hours. The CPU time of 2000 milliseconds (=2 seconds) was used by PID 5757. In that time it was determined that 100000007 was a prime number.
+PID 5753 resumed
+
+Printout from process whose pid is 5753. PID 5753 has completed its task.
+ The current time is 23:50:26 hours. The CPU time of 2000 milliseconds (=2 seconds) was used by PID 5753. In that time it was determined that 100000007 was a prime number.
+PID 5756 resumed
+
+Printout from process whose pid is 5756. PID 5756 has completed its task.
+ The current time is 23:50:30 hours. The CPU time of 4000 milliseconds (=4 seconds) was used by PID 5756. In that time it was determined that 100000039 was a prime number.
+PID 5751 resumed
+
+Printout from process whose pid is 5751. PID 5751 has completed its task.
+ The current time is 23:50:33 hours. The CPU time of 4000 milliseconds (=4 seconds) was used by PID 5751. In that time it was determined that 100000039 was a prime number.
+PID 5755 resumed
+
+Printout from process whose pid is 5755. PID 5755 has completed its task.
+ The current time is 23:50:35 hours. The CPU time of 2000 milliseconds (=2 seconds) was used by PID 5755. In that time it was determined that 100000007 was a prime number.
+QUITING
+
+
+
+
+Process Number  Arrival Time  Burst  Priorities
+1               1             4      3
+2               2             3      1
+3               3             2      1
+4               4             2      2
+5               6             4      3
+6               7             2      4
+
+
+PID: 5513
+Process Number: 1
+Duration: 1
+Time: 23:40:17
+
+PID: 5515
+Process Number: 2
+Duration: 3
+Time: 23:40:20
+
+PID: 5516
+Process Number: 3
+Duration: 2
+Time: 23:40:22
+
+PID: 5517
+Process Number: 4
+Duration: 2
+Time: 23:40:24
+
+PID: 5513
+Process Number: 1
+Duration: 3
+Time: 23:40:27
+
+PID: 5519
+Process Number: 5
+Duration: 4
+Time: 23:40:31
+
+PID: 5520
+Process Number: 6
+Duration: 2
+Time: 23:40:33
+
+dush5441@syslab07:~/Documents/CS451/A2$ gcc main.c linkedlist.c
+dush5441@syslab07:~/Documents/CS451/A2$ gcc prime_calc.c -oprime_calc.o
+dush5441@syslab07:~/Documents/CS451/A2$ ./a.out
+Input file name: input.txt
+
+key:0 process_number:1 arrival_time:1 burst:4 priorities:3 pid:0 is_running:0
+key:1 process_number:2 arrival_time:2 burst:3 priorities:1 pid:0 is_running:0
+key:2 process_number:3 arrival_time:3 burst:2 priorities:1 pid:0 is_running:0
+key:3 process_number:4 arrival_time:4 burst:2 priorities:2 pid:0 is_running:0
+key:4 process_number:5 arrival_time:6 burst:4 priorities:3 pid:0 is_running:0
+key:5 process_number:6 arrival_time:7 burst:2 priorities:4 pid:0 is_running:0
+
+Printout 5513 is about to be suspended... The current time is 23:40:17 hours.
+ A CPU time of 3000  milliseconds was used in the previous burst.
+In that time it was determined that 99999999 was a prime number.
+
+Printout from process whose pid is 5515. PID 5515 has completed its task.
+ The current time is 23:40:20 hours. The CPU time of 3000 milliseconds (=3 seconds) was used by PID 5515. In that time it was determined that 100000037 was a prime number.
+PID 5516 resumed
+
+Printout from process whose pid is 5516. PID 5516 has completed its task.
+ The current time is 23:40:22 hours. The CPU time of 2000 milliseconds (=2 seconds) was used by PID 5516. In that time it was determined that 100000007 was a prime number.
+PID 5517 resumed
+
+Printout from process whose pid is 5517. PID 5517 has completed its task.
+ The current time is 23:40:24 hours. The CPU time of 2000 milliseconds (=2 seconds) was used by PID 5517. In that time it was determined that 100000007 was a prime number.
+PID 5513 resumed
+
+Printout from process whose pid is 5513. PID 5513 has completed its task.
+ The current time is 23:40:27 hours. The CPU time of 4000 milliseconds (=4 seconds) was used by PID 5513. In that time it was determined that 100000039 was a prime number.
+PID 5519 resumed
+
+Printout from process whose pid is 5519. PID 5519 has completed its task.
+ The current time is 23:40:31 hours. The CPU time of 4000 milliseconds (=4 seconds) was used by PID 5519. In that time it was determined that 100000039 was a prime number.
+PID 5520 resumed
+
+Printout from process whose pid is 5520. PID 5520 has completed its task.
+ The current time is 23:40:33 hours. The CPU time of 2000 milliseconds (=2 seconds) was used by PID 5520. In that time it was determined that 100000007 was a prime number.
+QUITING
+
+
+
+
+
+Process Number  Arrival Time  Burst  Priorities
+1               1             4      1
+2               2             3      1
+3               3             2      1
+4               4             2      4
+5               6             4      3
+6               7             2      1
+
+
+PID: 5583
+Process Number: 1
+Duration: 4
+Time: 23:44:23
+
+PID: 5584
+Process Number: 2
+Duration: 3
+Time: 23:44:26
+
+PID: 5585
+Process Number: 3
+Duration: 2
+Time: 23:44:28
+
+PID: 5588
+Process Number: 6
+Duration: 2
+Time: 23:44:30
+
+PID: 5587
+Process Number: 5
+Duration: 4
+Time: 23:44:34
+
+PID: 5586
+Process Number: 4
+Duration: 2
+Time: 23:44:36
+
+dush5441@syslab07:~/Documents/CS451/A2$ gcc main.c linkedlist.c
+dush5441@syslab07:~/Documents/CS451/A2$ gcc prime_calc.c -oprime_calc.o
+dush5441@syslab07:~/Documents/CS451/A2$ ./a.out
+Input file name: input.txt
+
+key:0 process_number:1 arrival_time:1 burst:4 priorities:1 pid:0 is_running:0
+key:1 process_number:2 arrival_time:2 burst:3 priorities:1 pid:0 is_running:0
+key:2 process_number:3 arrival_time:3 burst:2 priorities:1 pid:0 is_running:0
+key:3 process_number:4 arrival_time:4 burst:2 priorities:4 pid:0 is_running:0
+key:4 process_number:5 arrival_time:6 burst:4 priorities:3 pid:0 is_running:0
+key:5 process_number:6 arrival_time:7 burst:2 priorities:1 pid:0 is_running:0
+
+Printout from process whose pid is 5583. PID 5583 has completed its task.
+ The current time is 23:44:23 hours. The CPU time of 4000 milliseconds (=4 seconds) was used by PID 5583. In that time it was determined that 100000039 was a prime number.
+PID 5584 resumed
+
+Printout from process whose pid is 5584. PID 5584 has completed its task.
+ The current time is 23:44:26 hours. The CPU time of 3000 milliseconds (=3 seconds) was used by PID 5584. In that time it was determined that 100000037 was a prime number.
+PID 5585 resumed
+
+Printout from process whose pid is 5585. PID 5585 has completed its task.
+ The current time is 23:44:28 hours. The CPU time of 2000 milliseconds (=2 seconds) was used by PID 5585. In that time it was determined that 100000007 was a prime number.
+PID 5588 resumed
+
+Printout from process whose pid is 5588. PID 5588 has completed its task.
+ The current time is 23:44:30 hours. The CPU time of 2000 milliseconds (=2 seconds) was used by PID 5588. In that time it was determined that 100000007 was a prime number.
+PID 5587 resumed
+
+Printout from process whose pid is 5587. PID 5587 has completed its task.
+ The current time is 23:44:34 hours. The CPU time of 4000 milliseconds (=4 seconds) was used by PID 5587. In that time it was determined that 100000039 was a prime number.
+PID 5586 resumed
+
+Printout from process whose pid is 5586. PID 5586 has completed its task.
+ The current time is 23:44:36 hours. The CPU time of 2000 milliseconds (=2 seconds) was used by PID 5586. In that time it was determined that 100000007 was a prime number.
+QUITING
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

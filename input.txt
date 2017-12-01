@@ -1,0 +1,7 @@
+Process Number  Arrival Time  Burst  Priorities
+1               1             4      3
+2               2             4      2
+3               2             2      1
+4               4             2      4
+5               6             4      2
+6               7             2      4
